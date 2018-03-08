@@ -1,0 +1,35 @@
+﻿@model IEnumerable<ContosoUniversity.Models.Parking>
+@{
+    ViewBag.Title = "SelectParking";
+}
+
+<h2>SelectParking</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ParkingID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OccupantID)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParkingID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OccupantID)
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<div>
+    @Html.ActionLink("Back to Parking", "Index")
+</div>

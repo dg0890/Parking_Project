@@ -1,0 +1,20 @@
+﻿
+@model IEnumerable<ContosoUniversity.Models.Parking>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="navbar-collapse collapse">
+    <ul class="btn btn-default">
+        @Html.ActionLink("Manage Parking", "ManageParking")
+    </ul>
+</div>
+
+<div class="navbar-collapse collapse">
+    <ul class="btn btn-default">
+        <li>@Html.ActionLink("Select Parking", "SelectParking")
+    </ul>
+</div>
